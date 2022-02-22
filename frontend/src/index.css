@@ -9,6 +9,8 @@
 body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
+  background: #111;
+  color: #fff;
 }
 
 a {
@@ -48,8 +50,12 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #888;
   margin-bottom: 60px;
+}
+
+header .logo {
+  color: whitesmoke;
 }
 
 .header ul {
@@ -65,6 +71,7 @@ h3 {
 .header ul li a {
   display: flex;
   align-items: center;
+  color: whitesmoke;
 }
 
 .header ul li a:hover {
@@ -83,7 +90,7 @@ h3 {
 }
 
 .heading p {
-  color: #828282;
+  color: #c9c7c7;
 }
 
 .goals {
@@ -93,7 +100,7 @@ h3 {
 }
 
 .goal {
-  background-color: #f4f4f4;
+  background-color: #424242;
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
@@ -123,7 +130,7 @@ h3 {
 .form-group select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #636363;
   border-radius: 5px;
   margin-bottom: 10px;
   font-family: inherit;
@@ -139,8 +146,8 @@ h3 {
   padding: 10px 20px;
   border: 1px solid #000;
   border-radius: 5px;
-  background: #000;
-  color: #fff;
+  background: rgb(224, 224, 224);
+  color: #000;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
@@ -156,8 +163,8 @@ h3 {
 }
 
 .btn-reverse {
-  background: #fff;
-  color: #000;
+  background: #000;
+  color: #fff;
 }
 
 .btn-block {
@@ -175,7 +182,7 @@ h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(199, 199, 199, 0.5);
   z-index: 5000;
   display: flex;
   justify-content: center;
@@ -186,7 +193,7 @@ h3 {
   width: 64px;
   height: 64px;
   border: 8px solid;
-  border-color: #000 transparent #555 transparent;
+  border-color: rgb(255, 255, 255) transparent rgb(201, 201, 201) transparent;
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }

@@ -1,4 +1,4 @@
-import { useSate, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaSignInAlt } from "react-icons/fa";
 
 function Login() {
@@ -9,7 +9,7 @@ function Login() {
 
   const { email, password } = formData;
 
-  const onChange = () => {
+  const onChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value
