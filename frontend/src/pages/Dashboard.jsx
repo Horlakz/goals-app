@@ -1,23 +1,35 @@
-import { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import  { useSelector } from 'react-redux'
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import GoalForm from "../components/GoalForm";
+
+const inlineStyle = {
+  color: "red",
+};
 
 function Dashboard() {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
 
-    const { user } = useSelector((state) => state.auth)
+  const { user } = useSelector((state) => state.auth);
 
-    useEffect(() => {
-        if(!user) {
-            navigate('/login')
-        }
-    }, [user, navigate])
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+  }, [user, navigate]);
 
-    return (
-        <div>
-            Dashboard
-        </div>
-    )
+  // let userDetails = user
+
+  return (
+    <>
+    <section className="heading">
+      <h1>Welcome {user && user.name}</h1>
+      <p>Goals Dashboard</p>
+    </section>
+
+    <GoalForm />
+    </>
+  );
 }
 
-export default Dashboard
+export default Dashboard;
