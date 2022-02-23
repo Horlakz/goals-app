@@ -54,8 +54,10 @@ h3 {
   margin-bottom: 60px;
 }
 
-header .logo {
-  color: whitesmoke;
+header .logo a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .header ul {
