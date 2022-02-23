@@ -15,9 +15,8 @@ const createGoal = async (goalData, token) => {
     return response.data
 }
 
-// const goalService = {
-//     createGoal,
-// }
+const goalService = {
+    createGoal,
+}
 
-// export default goalService
-export default createGoal()
+export default goalService
