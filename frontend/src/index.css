@@ -138,6 +138,11 @@ header .logo a {
   font-family: inherit;
 }
 
+.form-group input:focus {
+  outline: 1px solid red;
+  border: 1px solid red;
+}
+
 .form-group label {
   text-align: left;
   display: block;
