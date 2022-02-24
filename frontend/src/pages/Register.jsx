@@ -67,7 +67,7 @@ function Register() {
         <h1>
           <FaUser /> Register
         </h1>
-        <p>Please create an account</p>
+        <p>Please create an account to start setting goals</p>
       </section>
 
       <section className="form">
