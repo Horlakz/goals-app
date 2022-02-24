@@ -19,13 +19,13 @@ function GoalForm() {
       <form onSubmit={onSubmit}>
         <div className='form-group'>
           <label htmlFor='text'>Goal</label>
-          <input
-            type='text'
+          <textarea
+            // type='text'
             name='text'
             id='text'
             value={text}
             onChange={(e) => setText(e.target.value)}
-          />
+          ></textarea>
         </div>
         <div className='form-group'>
           <button className='btn btn-block' type='submit'>
