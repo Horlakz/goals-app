@@ -22,7 +22,7 @@ if(process.env.NODE_ENV === 'production') {
 
     app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../', 'frontend', 'build', 'index.html')))
 } else {
-    app.get('/', (req, res) => res.send('Please NODE_ENV to production'))
+    app.get('/', (req, res) => res.send('Please change NODE_ENV to production'))
 }
 
 app.use(errorHandler)
